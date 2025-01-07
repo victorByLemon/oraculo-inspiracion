@@ -27,3 +27,26 @@ function displayInspiration() {
     authorElement.textContent = currentInspiration.author;
     authorElement.classList.add("author");
     inspirationContent.appendChild(authorElement);
+
+  } else if (currentInspiration.type === "tendencia") {
+    const contentElement = document.createElement("p");
+    contentElement.textContent = currentInspiration.content;
+    inspirationContent.appendChild(contentElement);
+
+    const sourceElement = document.createElement("span");
+    sourceElement.classList.add("source");
+    sourceElement.innerHTML = `Fuente: <a href="${currentInspiration.source}" target="_blank">${currentInspiration.sourceText}</a>`;
+    inspirationContent.appendChild(sourceElement);
+
+  } else if (currentInspiration.type === "revelacion") {
+    const imageElement = document.createElement("img");
+    imageElement.src = currentInspiration.content;
+    imageElement.alt = currentInspiration.alt;
+    inspirationContent.appendChild(imageElement);
+  }
+}
+
+nextButton.addEventListener("click", displayInspiration);
+
+// Mostrar la primera inspiración al cargar la página
+displayInspiration();
