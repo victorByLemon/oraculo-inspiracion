@@ -30,6 +30,19 @@ body {
   animation: fadeIn 1.5s ease-in-out;
 }
 
+#inspiration-content p { /* Para frases */
+    font-weight: 300; /* Tipografía más fina */
+    font-size: 20px; /* Ligeramente más pequeña */
+    margin-bottom: 5px;
+}
+
+#inspiration-content .author { /* Para el autor */
+    font-weight: 600; /* Bold */
+    font-size: 18px; /* Un poco más pequeña que la frase */
+    display: block; /* Para que ocupe una línea completa */
+    margin-top: 10px;
+}
+
 #inspiration-content img {
   max-width: 100%;
   height: auto;
@@ -45,7 +58,7 @@ body {
   border-radius: 5px; /* Bordes ligeramente redondeados */
   cursor: pointer;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400; /* Quitamos la negrita del botón */
   transition: all 0.2s ease-in-out;
 }
 
@@ -70,6 +83,14 @@ body {
 
   #inspiration-content {
     font-size: 18px;
+  }
+
+  #inspiration-content p {
+        font-size: 18px;
+  }
+
+  #inspiration-content .author {
+        font-size: 16px;
   }
 
   #next-button {
