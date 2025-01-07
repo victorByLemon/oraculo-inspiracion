@@ -146,56 +146,102 @@ const inspirationData = [
   },
   {
     type: "tendencia",
-    content: "Los titulares de tendencias en creatividad y diseño se implementarán aquí."
+    content: "Metaverso y Web3: el futuro de las experiencias inmersivas",
+    source: "https://www.marketingdirecto.com/digital-general/digital/metaverso-web3-futuro-experiencias-inmersivas",
+    sourceText: "Marketing Directo"
+  },
+  {
+    type: "tendencia",
+    content: "La Inteligencia Artificial revoluciona el arte y la creatividad",
+    source: "https://www.xataka.com/robotica-e-ia/inteligencia-artificial-revoluciona-arte-creatividad-humana-da-paso-a-era-sintetica",
+    sourceText: "Xataka"
+  },
+  {
+    type: "tendencia",
+    content: "El diseño 'responsive' es más importante que nunca en 2024",
+    source: "https://www.mockplus.com/blog/post/responsive-web-design-trends",
+    sourceText: "Mockplus"
+  },
+  {
+    type: "tendencia",
+    content: "El 'modo oscuro' se consolida como una tendencia de diseño web",
+    source: "https://www.toptal.com/designers/web/web-design-trends-2024",
+    sourceText: "Toptal"
+  },
+  {
+    type: "tendencia",
+    content: "La tipografía 'kinética' llega para dar movimiento a las webs",
+    source: "https://99designs.com/blog/trends/web-design-trends/",
+    sourceText: "99designs"
   },
   {
     type: "revelacion",
-    content: "images/IMG_001.jpg",
+    content: "images/IMG_001.png",
     alt: "Descripción de la imagen 1"
   },
   {
     type: "revelacion",
-    content: "images/IMG_002.jpg",
+    content: "images/IMG_002.png",
     alt: "Descripción de la imagen 2"
   },
   {
     type: "revelacion",
-    content: "images/IMG_003.jpg",
+    content: "images/IMG_003.png",
     alt: "Descripción de la imagen 3"
   },
   {
     type: "revelacion",
-    content: "images/IMG_004.jpg",
+    content: "images/IMG_004.png",
     alt: "Descripción de la imagen 4"
   },
   {
     type: "revelacion",
-    content: "images/IMG_005.jpg",
+    content: "images/IMG_005.png",
     alt: "Descripción de la imagen 5"
   },
   {
     type: "revelacion",
-    content: "images/IMG_006.jpg",
+    content: "images/IMG_006.png",
     alt: "Descripción de la imagen 6"
   },
   {
     type: "revelacion",
-    content: "images/IMG_007.jpg",
+    content: "images/IMG_007.png",
     alt: "Descripción de la imagen 7"
   },
   {
     type: "revelacion",
-    content: "images/IMG_008.jpg",
+    content: "images/IMG_008.png",
     alt: "Descripción de la imagen 8"
   },
   {
     type: "revelacion",
-    content: "images/IMG_009.jpg",
+    content: "images/IMG_009.png",
     alt: "Descripción de la imagen 9"
   },
   {
     type: "revelacion",
-    content: "images/IMG_010.jpg",
+    content: "images/IMG_010.png",
     alt: "Descripción de la imagen 10"
+  },
+  {
+    type: "revelacion",
+    content: "images/IMG_011.png",
+    alt: "Descripción de la imagen 11"
+  },
+  {
+    type: "revelacion",
+    content: "images/IMG_012.png",
+    alt: "Descripción de la imagen 12"
+  },
+  {
+    type: "revelacion",
+    content: "images/IMG_013.png",
+    alt: "Descripción de la imagen 13"
+  },
+  {
+    type: "revelacion",
+    content: "images/IMG_014.png",
+    alt: "Descripción de la imagen 14"
   }
 ];
