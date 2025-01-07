@@ -27,19 +27,3 @@ function displayInspiration() {
     authorElement.textContent = currentInspiration.author;
     authorElement.classList.add("author");
     inspirationContent.appendChild(authorElement);
-  } else if (currentInspiration.type === "tendencia") {
-    const phraseElement = document.createElement("p");
-    phraseElement.textContent = currentInspiration.content; // Aquí mostraremos la tendencia
-    inspirationContent.appendChild(phraseElement);
-  } else if (currentInspiration.type === "revelacion") {
-    const imageElement = document.createElement("img");
-    imageElement.src = currentInspiration.content;
-    imageElement.alt = currentInspiration.alt;
-    inspirationContent.appendChild(imageElement);
-  }
-}
-
-nextButton.addEventListener("click", displayInspiration);
-
-// Mostrar la primera inspiración al cargar la página
-displayInspiration();
