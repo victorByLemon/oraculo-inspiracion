@@ -17,6 +17,31 @@ body {
   max-width: 700px;
 }
 
+#main-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+#inspiration-label {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 #inspiration-content {
   margin-bottom: 40px;
   min-height: 100px;
@@ -30,17 +55,19 @@ body {
   animation: fadeIn 1.5s ease-in-out;
 }
 
-#inspiration-content p { /* Para frases */
-    font-weight: 300; /* Tipografía más fina */
-    font-size: 20px; /* Ligeramente más pequeña */
-    margin-bottom: 5px;
+#inspiration-content p {
+  /* Para frases */
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
-#inspiration-content .author { /* Para el autor */
-    font-weight: 600; /* Bold */
-    font-size: 18px; /* Un poco más pequeña que la frase */
-    display: block; /* Para que ocupe una línea completa */
-    margin-top: 10px;
+#inspiration-content .author {
+  /* Para el autor */
+  font-weight: 600;
+  font-size: 18px;
+  display: block;
+  margin-top: 10px;
 }
 
 #inspiration-content img {
@@ -55,10 +82,10 @@ body {
   color: #000; /* Texto en negro */
   border: none;
   padding: 12px 25px;
-  border-radius: 5px; /* Bordes ligeramente redondeados */
+  border-radius: 25px; /* Botón completamente redondeado */
   cursor: pointer;
   font-size: 16px;
-  font-weight: 400; /* Quitamos la negrita del botón */
+  font-weight: 400;
   transition: all 0.2s ease-in-out;
 }
 
@@ -81,16 +108,28 @@ body {
     padding: 30px 40px;
   }
 
+  #main-title {
+    font-size: 28px;
+  }
+
+  #subtitle {
+    font-size: 16px;
+  }
+
+  #inspiration-label {
+    font-size: 12px;
+  }
+
   #inspiration-content {
     font-size: 18px;
   }
 
   #inspiration-content p {
-        font-size: 18px;
+    font-size: 18px;
   }
 
   #inspiration-content .author {
-        font-size: 16px;
+    font-size: 16px;
   }
 
   #next-button {
