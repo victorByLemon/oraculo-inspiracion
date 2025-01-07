@@ -6,6 +6,7 @@ body {
   min-height: 100vh;
   background-color: #fff;
   margin: 0;
+  flex-direction: column;
 }
 
 .container {
@@ -17,123 +18,162 @@ body {
   max-width: 700px;
 }
 
-#main-title {
-  font-size: 36px;
-  font-weight: 600;
-  color: #000;
-  margin-bottom: 10px;
+h1#main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
 }
 
-#subtitle {
-  font-size: 18px;
-  font-weight: 400;
-  color: #333;
-  margin-bottom: 30px;
+h2#subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 30px;
 }
 
 #inspiration-label {
-  background-color: #ffcc00;
-  color: #000;
-  padding: 5px 10px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
+    background-color: #ffcc00;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 #inspiration-content {
-  margin-bottom: 40px;
-  min-height: 100px;
-  font-size: 22px;
-  line-height: 1.4;
-  color: #000; /* Negro para el texto */
+    margin-bottom: 40px;
+    min-height: 100px;
+    font-size: 22px;
+    line-height: 1.4;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #inspiration-content p,
 #inspiration-content span {
-  animation: fadeIn 1.5s ease-in-out;
+    animation: fadeIn 1.5s ease-in-out;
+    text-align: center;
 }
 
 #inspiration-content p {
-  /* Para frases */
-  font-weight: 300;
-  font-size: 20px;
-  margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 5px;
+    max-width: 80%;
 }
 
 #inspiration-content .author {
-  /* Para el autor */
-  font-weight: 600;
-  font-size: 18px;
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+}
+
+#inspiration-content .source {
+  font-weight: 300;
+  font-size: 16px;
   display: block;
   margin-top: 10px;
+  color: #666;
+}
+
+#inspiration-content .source a {
+    color: #666;
+    text-decoration: none;
+}
+
+#inspiration-content .source a:hover {
+    text-decoration: underline;
 }
 
 #inspiration-content img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 30px;
-  border-radius: 0; /* Sin bordes redondeados */
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 50%;
+    max-width: 300px;
 }
 
 #next-button {
-  background-color: #ffcc00; /* Amarillo corporativo de ByLemon */
-  color: #000; /* Texto en negro */
-  border: none;
-  padding: 12px 25px;
-  border-radius: 25px; /* Botón completamente redondeado */
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 400;
-  transition: all 0.2s ease-in-out;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 40px;
 }
 
 #next-button:hover {
-  background-color: #e6b800; /* Un tono más oscuro de amarillo al hacer hover */
+    background-color: #e6b800;
+}
+
+#cta {
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cta a {
+    color: #000;
+    text-decoration: none;
+}
+
+#cta a:hover {
+    text-decoration: underline;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Diseño responsive */
 @media (max-width: 600px) {
-  .container {
-    padding: 30px 40px;
-  }
+    .container {
+        padding: 30px 40px;
+    }
 
-  #main-title {
-    font-size: 28px;
-  }
+    h1#main-title {
+        font-size: 32px;
+    }
 
-  #subtitle {
-    font-size: 16px;
-  }
+    h2#subtitle {
+        font-size: 14px;
+    }
 
-  #inspiration-label {
-    font-size: 12px;
-  }
+    #inspiration-label {
+        font-size: 12px;
+    }
 
-  #inspiration-content {
-    font-size: 18px;
-  }
+    #inspiration-content {
+        font-size: 18px;
+    }
 
-  #inspiration-content p {
-    font-size: 18px;
-  }
+    #inspiration-content p {
+        font-size: 18px;
+    }
 
-  #inspiration-content .author {
-    font-size: 16px;
-  }
+    #inspiration-content .author {
+        font-size: 16px;
+    }
 
-  #next-button {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
+    #next-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
