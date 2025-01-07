@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#inspiration-content {
+    margin-bottom: 30px;
+    min-height: 100px; /* Para evitar saltos de layout al cambiar contenido */
+}
+
+#inspiration-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#next-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
