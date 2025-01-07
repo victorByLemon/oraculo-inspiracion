@@ -176,72 +176,72 @@ const inspirationData = [
   },
   {
     type: "revelacion",
-    content: "images/IMG_001.png",
+    content: "Images/IMG_001.png",
     alt: "Descripción de la imagen 1"
   },
   {
     type: "revelacion",
-    content: "images/IMG_002.png",
+    content: "Images/IMG_002.png",
     alt: "Descripción de la imagen 2"
   },
   {
     type: "revelacion",
-    content: "images/IMG_003.png",
+    content: "Images/IMG_003.png",
     alt: "Descripción de la imagen 3"
   },
   {
     type: "revelacion",
-    content: "images/IMG_004.png",
+    content: "Images/IMG_004.png",
     alt: "Descripción de la imagen 4"
   },
   {
     type: "revelacion",
-    content: "images/IMG_005.png",
+    content: "Images/IMG_005.png",
     alt: "Descripción de la imagen 5"
   },
   {
     type: "revelacion",
-    content: "images/IMG_006.png",
+    content: "Images/IMG_006.png",
     alt: "Descripción de la imagen 6"
   },
   {
     type: "revelacion",
-    content: "images/IMG_007.png",
+    content: "Images/IMG_007.png",
     alt: "Descripción de la imagen 7"
   },
   {
     type: "revelacion",
-    content: "images/IMG_008.png",
+    content: "Images/IMG_008.png",
     alt: "Descripción de la imagen 8"
   },
   {
     type: "revelacion",
-    content: "images/IMG_009.png",
+    content: "Images/IMG_009.png",
     alt: "Descripción de la imagen 9"
   },
   {
     type: "revelacion",
-    content: "images/IMG_010.png",
+    content: "Images/IMG_010.png",
     alt: "Descripción de la imagen 10"
   },
   {
     type: "revelacion",
-    content: "images/IMG_011.png",
+    content: "Images/IMG_011.png",
     alt: "Descripción de la imagen 11"
   },
   {
     type: "revelacion",
-    content: "images/IMG_012.png",
+    content: "Images/IMG_012.png",
     alt: "Descripción de la imagen 12"
   },
   {
     type: "revelacion",
-    content: "images/IMG_013.png",
+    content: "Images/IMG_013.png",
     alt: "Descripción de la imagen 13"
   },
   {
     type: "revelacion",
-    content: "images/IMG_014.png",
+    content: "Images/IMG_014.png",
     alt: "Descripción de la imagen 14"
   }
 ];
