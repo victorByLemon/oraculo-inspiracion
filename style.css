@@ -1,39 +1,87 @@
-@charset "UTF-8";
-/* CSS Document */
 body {
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f5f5f5;
+  font-family: 'Quicksand', sans-serif; /* Fuente similar a la de la web de ejemplo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f0e8, #e9e4d4); /* Degradado de fondo */
+  background-size: cover;
+  background-position: center;
+  margin: 0; /* Elimina el margen predeterminado del body */
 }
 
 .container {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 #inspiration-content {
-    margin-bottom: 30px;
-    min-height: 100px; /* Para evitar saltos de layout al cambiar contenido */
+  margin-bottom: 30px;
+  min-height: 100px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #333;
+}
+
+#inspiration-content p,
+#inspiration-content span { /* Añadimos span por si hay microrelatos */
+  animation: fadeIn 2s ease-in-out; /* Animación de aparición */
 }
 
 #inspiration-content img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 #next-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #f5984a; /* Color naranja similar al de la web de ejemplo */
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out; /* Transición suave para el hover */
+}
+
+#next-button:hover {
+  background-color: #e07d38; /* Color naranja un poco más oscuro al hacer hover */
+  transform: translateY(-2px); /* Ligero desplazamiento hacia arriba */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Diseño responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 40px;
+  }
+
+  #inspiration-content {
+    font-size: 20px;
+  }
+
+  #next-button {
+    padding: 12px 25px;
     font-size: 16px;
+  }
 }
