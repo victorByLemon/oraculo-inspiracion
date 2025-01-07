@@ -10,6 +10,12 @@ function displayInspiration() {
         const phraseElement = document.createElement("p");
         phraseElement.textContent = currentInspiration.content;
         inspirationContent.appendChild(phraseElement);
+
+        const authorElement = document.createElement("span");
+        authorElement.textContent = currentInspiration.author;
+        authorElement.classList.add("author");
+        inspirationContent.appendChild(authorElement);
+
     } else if (currentInspiration.type === "image") {
         const imageElement = document.createElement("img");
         imageElement.src = currentInspiration.content;
@@ -27,4 +33,4 @@ function displayInspiration() {
 nextButton.addEventListener("click", displayInspiration);
 
 // Mostrar la primera inspiración al cargar la página
-displayInspiration();// JavaScript Document
+displayInspiration();
