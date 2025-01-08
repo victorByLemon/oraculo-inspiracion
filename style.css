@@ -5,7 +5,8 @@ body {
   color: #000000;
   margin: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
 }
@@ -15,49 +16,60 @@ body {
   max-width: 700px;
   width: 90%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-title {
   font-weight: 700;
   font-size: 40px;
   margin: 0;
+  margin-top: 20px;
 }
 
 .subtitle {
   font-weight: 400;
   font-size: 14px;
-  margin: 10px 0;
+  margin: 5px 0;
   color: #666666;
 }
 
 .tag {
   display: inline-block;
-  background-color: #FFCC00;
-  color: #000000;
+  background-color: #FFFFFF;
+  color: #CCCCCC;
   font-weight: 600;
   font-size: 12px;
   padding: 5px 10px;
   border-radius: 20px;
   text-transform: uppercase;
   margin: 20px 0;
-  border: 1px solid #e6b800;
+  border: 1px solid #CCCCCC;
 }
 
 .content {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   margin: 20px 0;
 }
 
 .content .author {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
+  color: #000000;
 }
 
 .content img {
   border-radius: 50%;
   max-width: 250px;
   height: auto;
+}
+
+.content a {
+  font-size: 14px;
+  color: #666666;
+  text-decoration: none;
 }
 
 .button {
@@ -78,12 +90,13 @@ body {
 }
 
 .cta {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #666666;
 }
 
 .cta a {
-  color: #000000;
+  color: #666666;
   text-decoration: none;
 }
