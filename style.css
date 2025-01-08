@@ -39,14 +39,14 @@ header {
   display: inline-block;
   background-color: #FFFFFF;
   color: #CCCCCC;
-  font-weight: 600;
+  font-weight: 300; /* Cambiado a light */
   font-size: 12px;
   padding: 5px 10px;
   border-radius: 20px;
   text-transform: uppercase;
   margin: 20px auto;
   border: 1px solid #CCCCCC;
-  width: fit-content;
+  width: 150px; /* Ancho ajustado */
 }
 
 .content {
@@ -83,7 +83,7 @@ header {
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
-  width: 200px;
+  width: 180px; /* Ancho ajustado */
   margin: auto;
 }
 
