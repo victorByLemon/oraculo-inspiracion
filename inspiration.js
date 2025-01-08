@@ -24,12 +24,17 @@ const inspirationData = [
   },
   {
     type: "revelacion",
-    content: "images/IMG_001.png",
+    content: "Images/IMG_001.png",
     alt: "Imagen creativa 1"
   },
   {
     type: "revelacion",
-    content: "images/IMG_002.png",
+    content: "Images/IMG_002.png",
     alt: "Imagen creativa 2"
+  },
+  {
+    type: "revelacion",
+    content: "Images/IMG_003.png",
+    alt: "Imagen creativa 3"
   }
 ];

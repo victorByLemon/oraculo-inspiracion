@@ -44,10 +44,9 @@ header {
   padding: 5px 10px;
   border-radius: 20px;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin: 20px auto;
   border: 1px solid #CCCCCC;
-  box-sizing: border-box;
-  max-width: fit-content;
+  width: fit-content;
 }
 
 .content {
@@ -84,6 +83,8 @@ header {
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
+  width: 200px;
+  margin: auto;
 }
 
 .button:hover {
