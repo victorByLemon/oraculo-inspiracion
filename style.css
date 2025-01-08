@@ -39,7 +39,7 @@ header {
   display: inline-block;
   background-color: #FFFFFF;
   color: #CCCCCC;
-  font-weight: 300; /* Cambiado a light */
+  font-weight: 100; /* Cambiado a light */
   font-size: 12px;
   padding: 5px 10px;
   border-radius: 20px;
