@@ -27,6 +27,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   margin: 10px 0;
+  color: #666666;
 }
 
 .tag {
@@ -39,6 +40,7 @@ body {
   border-radius: 20px;
   text-transform: uppercase;
   margin: 20px 0;
+  border: 1px solid #e6b800;
 }
 
 .content {
@@ -52,20 +54,27 @@ body {
   font-size: 16px;
 }
 
+.content img {
+  border-radius: 50%;
+  max-width: 250px;
+  height: auto;
+}
+
 .button {
   background-color: #FFCC00;
   color: #000000;
   font-weight: 400;
   font-size: 14px;
   padding: 10px 20px;
-  border: none;
+  border: 2px solid #007BFF;
   border-radius: 50px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .button:hover {
   background-color: #e6b800;
+  border-color: #0056b3;
 }
 
 .cta {
