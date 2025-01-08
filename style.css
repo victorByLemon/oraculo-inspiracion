@@ -1,202 +1,80 @@
+
 body {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #fff;
-    margin: 0;
-    flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-    background-color: #fff;
-    padding: 50px 80px;
-    border-radius: 0;
-    /* Sin bordes redondeados */
-    box-shadow: none;
-    /* Sin sombras */
-    text-align: center;
-    max-width: 700px;
-    /* Limita el ancho del contenedor */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 650px;
+  text-align: center;
+  max-width: 700px;
+  width: 90%;
+  margin: auto;
 }
 
-.content{
-        display: flex;
-    flex-direction: column;
-    align-items: center;
+.main-title {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
 }
 
-.title-subtitle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 10px 0;
 }
 
-h1#main-title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 5px;
+.tag {
+  display: inline-block;
+  background-color: #FFCC00;
+  color: #000000;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
 }
 
-h2#subtitle {
-    font-size: 14px;
-    font-weight: 400;
-    color: #333;
-    margin-bottom: 0px;
+.content {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 20px 0;
 }
 
-#inspiration-label {
-    background-color: #ffcc00;
-    color: #000;
-    padding: 5px 10px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    align-self: center;
+.content .author {
+  font-weight: 600;
+  font-size: 16px;
 }
 
-#inspiration-content {
-    margin-bottom: 20px;
-    min-height: 100px;
-    font-size: 22px;
-    line-height: 1.4;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.button {
+  background-color: #FFCC00;
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-#inspiration-content p,
-#inspiration-content span {
-    animation: fadeIn 1.5s ease-in-out;
-    text-align: center;
+.button:hover {
+  background-color: #e6b800;
 }
 
-#inspiration-content p {
-    font-weight: 300;
-    font-size: 18px;
-    margin-bottom: 5px;
-    max-width: 80%;
+.cta {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 20px;
 }
 
-#inspiration-content .author {
-    font-weight: 600;
-    font-size: 16px;
-    display: block;
-    margin-top: 10px;
-}
-
-#inspiration-content .source {
-    font-weight: 300;
-    font-size: 14px;
-    display: block;
-    margin-top: 10px;
-    color: #666;
-}
-
-#inspiration-content .source a {
-    color: #666;
-    text-decoration: none;
-}
-
-#inspiration-content .source a:hover {
-    text-decoration: underline;
-}
-
-#inspiration-content img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 0px;
-    border-radius: 50%;
-    max-width: 250px;
-}
-
-#next-button {
-    background-color: #ffcc00;
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 400;
-    transition: all 0.2s ease-in-out;
-    margin-bottom: 0px;
-    align-self: center;
-}
-
-#next-button:hover {
-    background-color: #e6b800;
-}
-
-#cta {
-    font-size: 12px;
-    color: #333;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#cta a {
-    color: #000;
-    text-decoration: none;
-}
-
-#cta a:hover {
-    text-decoration: underline;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Diseño responsive */
-@media (max-width: 600px) {
-    .container {
-        padding: 30px 40px;
-        height: 750px;
-    }
-
-    h1#main-title {
-        font-size: 32px;
-    }
-
-    h2#subtitle {
-        font-size: 14px;
-    }
-
-    #inspiration-label {
-        font-size: 12px;
-    }
-
-    #inspiration-content {
-        font-size: 18px;
-    }
-
-    #inspiration-content p {
-        font-size: 18px;
-    }
-
-    #inspiration-content .author {
-        font-size: 16px;
-    }
-
-    #next-button {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
+.cta a {
+  color: #000000;
+  text-decoration: none;
 }

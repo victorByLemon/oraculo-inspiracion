@@ -1,52 +1,25 @@
-const inspirationContent = document.getElementById("inspiration-content");
-const nextButton = document.getElementById("next-button");
-const inspirationLabel = document.getElementById("inspiration-label");
 
-function displayInspiration() {
-  // Generar un índice aleatorio
-  const randomIndex = Math.floor(Math.random() * inspirationData.length);
-  const currentInspiration = inspirationData[randomIndex];
+document.getElementById("inspireBtn").addEventListener("click", () => {
+  const content = inspirationData[Math.floor(Math.random() * inspirationData.length)];
+  const contentDiv = document.getElementById("content");
+  const tag = document.getElementById("tag");
 
-  inspirationContent.innerHTML = ""; // Limpiar contenido anterior
-
-  // Mostrar la etiqueta según el tipo de contenido
-  if (currentInspiration.type === "inspiracion") {
-    inspirationLabel.textContent = "Inspiración";
-  } else if (currentInspiration.type === "tendencia") {
-    inspirationLabel.textContent = "Tendencia";
-  } else if (currentInspiration.type === "revelacion") {
-    inspirationLabel.textContent = "Revelación";
+  if (content.type === "inspiracion") {
+    tag.textContent = "INSPIRACIÓN";
+    contentDiv.innerHTML = `
+      <p>${content.content}</p>
+      <p class="author">${content.author}</p>
+    `;
+  } else if (content.type === "tendencia") {
+    tag.textContent = "TENDENCIA";
+    contentDiv.innerHTML = `
+      <p>${content.content}</p>
+      <a href="${content.source}" target="_blank">${content.sourceText}</a>
+    `;
+  } else if (content.type === "revelacion") {
+    tag.textContent = "REVELACIÓN";
+    contentDiv.innerHTML = `
+      <img src="${content.content}" alt="${content.alt}" class="image">
+    `;
   }
-
-  if (currentInspiration.type === "inspiracion") {
-    const phraseElement = document.createElement("p");
-    phraseElement.textContent = currentInspiration.content;
-    inspirationContent.appendChild(phraseElement);
-
-    const authorElement = document.createElement("span");
-    authorElement.textContent = currentInspiration.author;
-    authorElement.classList.add("author");
-    inspirationContent.appendChild(authorElement);
-
-  } else if (currentInspiration.type === "tendencia") {
-    const contentElement = document.createElement("p");
-    contentElement.textContent = currentInspiration.content;
-    inspirationContent.appendChild(contentElement);
-
-    const sourceElement = document.createElement("span");
-    sourceElement.classList.add("source");
-    sourceElement.innerHTML = `Fuente: <a href="${currentInspiration.source}" target="_blank">${currentInspiration.sourceText}</a>`;
-    inspirationContent.appendChild(sourceElement);
-
-  } else if (currentInspiration.type === "revelacion") {
-    const imageElement = document.createElement("img");
-    imageElement.src = currentInspiration.content;
-    imageElement.alt = currentInspiration.alt;
-    inspirationContent.appendChild(imageElement);
-  }
-}
-
-nextButton.addEventListener("click", displayInspiration);
-
-// Mostrar la primera inspiración al cargar la página
-displayInspiration();
+});
